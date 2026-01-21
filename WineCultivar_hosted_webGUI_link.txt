@@ -1,0 +1,11 @@
+Name: Okikiola Cyrus
+
+Matric Number: 22CG031911
+
+Machine Learning Algorithm Used: 
+
+Model persistence method used (e.g., Joblib or Pickle): Joblib
+
+Live URL of the hosted application
+
+GitHub repository link

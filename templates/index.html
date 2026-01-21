@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Cultivar Predictor</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 50px auto; line-height: 1.6; }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; text-transform: capitalize; }
+        input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #722f37; color: white; padding: 10px 20px; border: none; cursor: pointer; width: 100%; font-size: 16px; }
+        .result { background: #e8f5e9; padding: 15px; border: 1px solid #2e7d32; margin-top: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Wine Cultivar Prediction</h1>
+    <p>Enter chemical properties to predict vineyard origin.</p>
+
+    <form action="/predict" method="post">
+        {% for feature in features %}
+        <div class="input-group">
+            <label>{{ feature.replace('_', ' ') }}:</label>
+            <input type="number" step="any" name="{{ feature }}" required>
+        </div>
+        {% endfor %}
+        <button type="submit">Predict Cultivar</button>
+    </form>
+
+    {% if prediction_text %}
+    <div class="result">
+        <h2>{{ prediction_text }}</h2>
+    </div>
+    {% endif %}
+</body>
+</html>
