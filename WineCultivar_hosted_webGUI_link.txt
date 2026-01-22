@@ -2,10 +2,10 @@ Name: Okikiola Cyrus
 
 Matric Number: 22CG031911
 
-Machine Learning Algorithm Used: 
+Machine Learning Algorithm Used: Logistic Regression
 
 Model persistence method used (e.g., Joblib or Pickle): Joblib
 
-Live URL of the hosted application
+Live URL of the hosted application : https://winecultivar-project-okikiola-cyrus.onrender.com
 
-GitHub repository link
+GitHub repository link: https://github.com/CyMain/WineCultivar_Project_Okikiola_Cyrus_Temidayo_22CG031911
